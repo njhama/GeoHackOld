@@ -4,10 +4,15 @@
 - Download Node.js
 - Obtain a API key from [MapBox](https://www.mapbox.com/)
 - Clone the repo
-- ADD gif here
+ ```
+ git clone git@github.com:njhama/GeoHack.git
+ ```
 - Enter API Key into code
   - Navigate into client > main.js
   - Replace ENTER_API_KEY with your MapBox API key
+   ```
+   const API_KEY = "ENTER_API_KEY";
+   ```
 
 # Running the Program
 - Open client/index.html in a web browser, enter a port
