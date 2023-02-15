@@ -2,7 +2,7 @@
 # ![GEOHACK](other/logo_trans.png)
 
 # Getting Started
-- Download Node.js
+- Download Node.js from [Node](https://nodejs.org/en/)
 - Obtain a API key from [MapBox](https://www.mapbox.com/)
 - Clone the repo
  ```
