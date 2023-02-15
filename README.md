@@ -1,6 +1,7 @@
 
 # ![GEOHACK](other/logo_trans.png)
 
+# ![gif](other/geo_gif.gif)
 # Getting Started
 - Download Node.js from [Node](https://nodejs.org/en/)
 - Obtain a API key from [MapBox](https://www.mapbox.com/)
