@@ -17,10 +17,16 @@
 # Running the Program
 - Open client/index.html in a web browser, enter a port
 - CD into the server and run the server using node, enter the port as an argument
-  - node server.js 9000
+ ```
+node server.js 9000
+ ```
 
 # Notes
 - Browser size may be changed in server/server.js on line 8 -9
+```
+let heightInpt = 1200;
+let widthInpt = 1200;
+```
 
 # Disclaimer
 This tool is intended for educational purposes only and is only a proof of concept. 
