@@ -1,7 +1,6 @@
 
 # ![GEOHACK](other/logo_trans.png)
 
-# ![gif](other/geo_gif.gif)
 # Getting Started
 - Download Node.js from [Node](https://nodejs.org/en/)
 - Obtain a API key from [MapBox](https://www.mapbox.com/)
@@ -23,6 +22,7 @@
 cd server
 node server.js 9000
  ```
+![gif](other/geo_gif.gif)
 
 # Notes
 - Browser size may be changed in server/server.js on line 8 -9
