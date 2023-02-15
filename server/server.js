@@ -4,18 +4,18 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http, { cors: { origin: "*" } });
 
-
-
-let argument  = process.argv.slice(2);
-let portInpt = argument[0];
-let heightInpt = parseInt(argument[1]);
-let widthInpt = parseInt(argument[2]);
+//let argument  = process.argv.slice(1);
+let portInpt = process.argv[2];
+//let heightInpt = parseInt(argument[1]);
+//let widthInpt = parseInt(argument[2]);
+let heightInpt = 1200;
+let widthInpt = 1200;
 
 console.log("Launching...");
 console.log("Port: " + portInpt);
 console.log("Height: " + heightInpt);
 console.log('Width: ' + widthInpt);
-console.log("-------------------------");
+console.log("-" * 20);
 
 io.on('connection', (socket) => {
     socket.emit("Connected");
@@ -32,11 +32,13 @@ const url = "https://www.geoguessr.com/signin";
 let lastLat = 0;
 let lastLong = 0;
 
+
 async function start() {
     await puppeteer
         .launch({
             headless: false,
-            ignoreDefaultArgs: ["--disable-extensions", "--enable-automation"]
+            ignoreDefaultArgs: ["--disable-extensions", "--enable-automation",],
+            defaultViewport: null
         })
         .then(async (browser) => {
             const page = await browser.newPage();
@@ -60,11 +62,6 @@ async function start() {
                         let newDate = new Date().toLocaleTimeString();
                         io.emit("coords", `${long},${lat}`);
                         console.log(`[${newDate}] Latitude: ${lat} Longitude: ${long}`);
-
-                        
-                
-
-
                     }
                 }
             });
