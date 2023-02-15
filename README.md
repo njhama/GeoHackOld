@@ -31,7 +31,7 @@ let widthInpt = 1200;
 ```
 
 # Disclaimer
-This tool is intended for educational purposes only and is only a proof of concept. 
+This tool is intended for educational purposes only and is only a proof of concept. Do not use unfairly >:(
 
 # Links
 - [Node.js](https://nodejs.org/en/download/)
