@@ -4,10 +4,7 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http, { cors: { origin: "*" } });
 
-//let argument  = process.argv.slice(1);
 let portInpt = process.argv[2];
-//let heightInpt = parseInt(argument[1]);
-//let widthInpt = parseInt(argument[2]);
 let heightInpt = 1200;
 let widthInpt = 1200;
 
@@ -31,7 +28,6 @@ http.listen(portInpt, () => {
 const url = "https://www.geoguessr.com/signin";
 let lastLat = 0;
 let lastLong = 0;
-
 
 async function start() {
     await puppeteer

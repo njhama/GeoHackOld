@@ -1,5 +1,9 @@
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoibmlja3loYW1hIiwiYSI6ImNsMHIwbDY0dTJmaXIzYm41ZmMydHdlNHQifQ.s0e5ntX9Pp0nJur9tPv2Bw';
+//ENTER MAPBOX API KEY HERE
+const API_KEY = "ENTER_API_KEY";
+
+//CODE
+mapboxgl.accessToken = API_KEY;
 
 const map = new mapboxgl.Map
 ({
@@ -8,7 +12,6 @@ const map = new mapboxgl.Map
     center: [0, 0],
     zoom: 1
 });
-//mapbox://styles/nickyhama/cl2f6iiy8000214qmakcw4nyk
 
 let messageBox = document.getElementById("fullMessage");
 let msg = document.getElementById("inputfield")
@@ -19,9 +22,7 @@ let serverConnection = false;
 var long = 0,lat = 0
 const terminal = document.getElementById("terminal");
 
-//Server Configuration
 let port = prompt("Enter port")
-//let port = "9001"
 const socket = io("ws://localhost:" + port);
 
 socket.on('connect', function() {
@@ -67,7 +68,7 @@ function flyToLoc(long, lat)
 }
 
 async function getCountryName(lng, lat) {
-    const mapbox_access_token = 'pk.eyJ1Ijoibmlja3loYW1hIiwiYSI6ImNsMHIwbDY0dTJmaXIzYm41ZmMydHdlNHQifQ.s0e5ntX9Pp0nJur9tPv2Bw';
+    const mapbox_access_token = API_KEY;
     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${lng},${lat}.json?types=poi&access_token=${mapbox_access_token}`;
   
     const response = await fetch(url);
