@@ -5,8 +5,8 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http, { cors: { origin: "*" } });
 
 let portInpt = process.argv[2];
-let heightInpt = 1200;
-let widthInpt = 1200;
+let heightInpt = puppet_height;
+let widthInpt = puppet_width;
 
 console.log("Launching...");
 console.log("Port: " + portInpt);

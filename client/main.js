@@ -1,13 +1,12 @@
 
-//CODE
 mapboxgl.accessToken = API_KEY;
 
 const map = new mapboxgl.Map
 ({
     container: 'map',
-    style: 'mapbox://styles/nickyhama/cl2f6k55u000014qqkyfv26ml',
+    style: map_mapbox_style,
     center: [0, 0],
-    zoom: 1
+    zoom: map_zoom
 });
 
 let messageBox = document.getElementById("fullMessage");
