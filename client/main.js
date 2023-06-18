@@ -1,7 +1,4 @@
 
-//ENTER MAPBOX API KEY HERE
-const API_KEY = "ENTER_API_KEY";
-
 //CODE
 mapboxgl.accessToken = API_KEY;
 
