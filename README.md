@@ -8,9 +8,7 @@
  ```
  git clone git@github.com:njhama/GeoHack.git
  ```
-- Enter API Key into code
-  - Navigate into client > main.js
-  - Replace ENTER_API_KEY with your MapBox API key
+- Create config.js and declare API_KEY var with your MapBox API Key
    ```
    const API_KEY = "ENTER_API_KEY";
    ```
@@ -25,15 +23,11 @@ node server.js 9000
 ![gif](other/geo_gif.gif)
 
 # Notes
-- Browser size may be changed in server/server.js on line 8 -9
-```
-let heightInpt = 1200;
-let widthInpt = 1200;
-```
+- Settings may be changed in settings.js
 
 # Disclaimer
-This tool is intended for educational purposes only and is only a proof of concept. Do not use unfairly >:(
+For educational purposes.
 
-# Links
+# Download Links
 - [Node.js](https://nodejs.org/en/download/)
 - [MapBox](https://www.mapbox.com/)
