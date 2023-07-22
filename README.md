@@ -25,9 +25,6 @@ node server.js 9000
 # Notes
 - Settings may be changed in settings.js
 
-# Disclaimer
-For educational purposes.
-
 # Download Links
 - [Node.js](https://nodejs.org/en/download/)
 - [MapBox](https://www.mapbox.com/)
